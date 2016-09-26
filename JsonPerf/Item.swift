@@ -10,9 +10,14 @@ import Foundation
 
 typealias MyJSON = [String: Any]
 
+enum SerializationError: Error {
+    case missing
+    case invalid
+}
+
 struct Repo {
 	var id: Int
-//	var name: String
+	var name: String
 //	var fullName: String
 //	var owner: Owner
 //	var isPrivate: Bool
@@ -76,7 +81,18 @@ struct Repo {
 //	var defaultBranch: String
 //	var score: Int
 
-	init(json: MyJSON) {
-		self.id = json["id"] as! Int
+	init(json: MyJSON) throws {
+
+        guard !json.isEmpty else {
+            throw SerializationError.invalid
+        }
+
+        guard let id = json["id"] as? Int,
+            let name = json["name"] as? String else {
+                throw SerializationError.missing
+        }
+
+		self.id = id
+        self.name = name
 	}
 }

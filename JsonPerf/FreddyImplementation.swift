@@ -13,7 +13,8 @@ import Freddy
 extension Repo: JSONDecodable {
 
 	public init(json value: JSON) throws {
-		id = try value.getInt(at: "id")
+		self.id = try value.getInt(at: "id")
+        self.name = try value.getString(at: "name")
 	}
 }
 

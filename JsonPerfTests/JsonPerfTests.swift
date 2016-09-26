@@ -8,6 +8,7 @@
 
 import XCTest
 import Freddy
+
 @testable import JsonPerf
 
 class JsonPerfTests: XCTestCase {
@@ -26,7 +27,7 @@ class JsonPerfTests: XCTestCase {
 
         super.tearDown()
     }
-    
+
     func testFreddyPerformance() {
         self.measure {
 			do {
@@ -49,8 +50,8 @@ class JsonPerfTests: XCTestCase {
 					return
 				}
 
-				_ = items.map{
-					Repo(json: $0)
+				_ = try items.map{
+					try Repo(json: $0)
 				}
 			} catch {
 				XCTFail("bad json")
