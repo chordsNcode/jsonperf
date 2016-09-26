@@ -18,9 +18,9 @@ enum SerializationError: Error {
 struct Repo {
 	var id: Int
 	var name: String
-//	var fullName: String
-//	var owner: Owner
-//	var isPrivate: Bool
+	var fullName: String
+	var owner: Owner
+	var isPrivate: Bool
 //	var htmlUrl: String
 //	var description: String
 //	var fork: Bool
@@ -79,20 +79,6 @@ struct Repo {
 //	var openIssues: Int
 //	var watchers: Int
 //	var defaultBranch: String
-//	var score: Int
+	var score: Int
 
-	init(json: MyJSON) throws {
-
-        guard !json.isEmpty else {
-            throw SerializationError.invalid
-        }
-
-        guard let id = json["id"] as? Int,
-            let name = json["name"] as? String else {
-                throw SerializationError.missing
-        }
-
-		self.id = id
-        self.name = name
-	}
 }
