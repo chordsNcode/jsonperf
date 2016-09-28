@@ -10,6 +10,7 @@
 		6D1220371D93561D00779B69 /* FreddyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1220361D93561D00779B69 /* FreddyImplementation.swift */; };
 		6D1220381D93583900779B69 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DD562001D91E0D100973D80 /* response.json */; };
 		6D8BB60E1D989F2A00100187 /* NormalImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BB60D1D989F2A00100187 /* NormalImplementation.swift */; };
+		6DA6806C1D9B52C400CCC4A0 /* SwiftyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */; };
 		6DD561E11D91E09A00973D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD561E01D91E09A00973D80 /* AppDelegate.swift */; };
 		6DD561E31D91E09A00973D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD561E21D91E09A00973D80 /* ViewController.swift */; };
 		6DD561E61D91E09A00973D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD561E41D91E09A00973D80 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		4FCF8B0B1A92F28FFB8CD498 /* Pods-JsonPerfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonPerfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonPerfTests/Pods-JsonPerfTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D1220361D93561D00779B69 /* FreddyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreddyImplementation.swift; sourceTree = "<group>"; };
 		6D8BB60D1D989F2A00100187 /* NormalImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalImplementation.swift; sourceTree = "<group>"; };
+		6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyImplementation.swift; sourceTree = "<group>"; };
 		6DD561DD1D91E09A00973D80 /* JsonPerf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonPerf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD561E01D91E09A00973D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DD561E21D91E09A00973D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				6D8BB60F1D989F3E00100187 /* EverythingElse */,
 				6D8BB60D1D989F2A00100187 /* NormalImplementation.swift */,
 				6D1220361D93561D00779B69 /* FreddyImplementation.swift */,
+				6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */,
 			);
 			path = JsonPerf;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D1220371D93561D00779B69 /* FreddyImplementation.swift in Sources */,
+				6DA6806C1D9B52C400CCC4A0 /* SwiftyImplementation.swift in Sources */,
 				6DD562051D91E52F00973D80 /* Repo.swift in Sources */,
 				6DD561E31D91E09A00973D80 /* ViewController.swift in Sources */,
 				6DD562031D91E3D500973D80 /* Owner.swift in Sources */,
@@ -460,6 +464,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -502,6 +507,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

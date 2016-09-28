@@ -53,7 +53,7 @@ extension Repo {
             let subscriptionUrl = json["subscription_url"] as? String,
             let commitsUrl = json["commits_url"] as? String,
             let gitCommitsUrl = json["git_commits_url"] as? String,
-            let commentsUrl = json["comments_url"]as? String,
+            let commentsUrl = json["comments_url"] as? String,
             let issueCommentUrl = json["issue_comment_url"] as? String,
             let contentsUrl = json["contents_url"] as? String,
             let compareUrl = json["compare_url"] as? String,
