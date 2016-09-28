@@ -9,8 +9,6 @@
 import Foundation
 import SwiftyJSON
 
-extension SwiftyJ
-
 extension Repo {
 
     public init(swifty json: JSON) {
