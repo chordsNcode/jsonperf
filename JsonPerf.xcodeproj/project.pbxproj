@@ -13,6 +13,7 @@
 		6DA6806C1D9B52C400CCC4A0 /* SwiftyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */; };
 		6DA6806E1D9B5BF300CCC4A0 /* NormalPerfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6806D1D9B5BF300CCC4A0 /* NormalPerfTest.swift */; };
 		6DA680701D9B5C3600CCC4A0 /* XCTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6806F1D9B5C3600CCC4A0 /* XCTestExtension.swift */; };
+		6DA680721D9B645B00CCC4A0 /* SwiftyPerfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA680711D9B645B00CCC4A0 /* SwiftyPerfTests.swift */; };
 		6DD561E11D91E09A00973D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD561E01D91E09A00973D80 /* AppDelegate.swift */; };
 		6DD561E31D91E09A00973D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD561E21D91E09A00973D80 /* ViewController.swift */; };
 		6DD561E61D91E09A00973D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD561E41D91E09A00973D80 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyImplementation.swift; sourceTree = "<group>"; };
 		6DA6806D1D9B5BF300CCC4A0 /* NormalPerfTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalPerfTest.swift; sourceTree = "<group>"; };
 		6DA6806F1D9B5C3600CCC4A0 /* XCTestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestExtension.swift; sourceTree = "<group>"; };
+		6DA680711D9B645B00CCC4A0 /* SwiftyPerfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyPerfTests.swift; sourceTree = "<group>"; };
 		6DD561DD1D91E09A00973D80 /* JsonPerf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonPerf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD561E01D91E09A00973D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DD561E21D91E09A00973D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				6DD561F51D91E09A00973D80 /* FreddyPerfTests.swift */,
 				6DA6806D1D9B5BF300CCC4A0 /* NormalPerfTest.swift */,
+				6DA680711D9B645B00CCC4A0 /* SwiftyPerfTests.swift */,
 				6DD561F71D91E09A00973D80 /* Info.plist */,
 				6DA6806F1D9B5C3600CCC4A0 /* XCTestExtension.swift */,
 			);
@@ -391,6 +394,7 @@
 			files = (
 				6DD561F61D91E09A00973D80 /* FreddyPerfTests.swift in Sources */,
 				6DA680701D9B5C3600CCC4A0 /* XCTestExtension.swift in Sources */,
+				6DA680721D9B645B00CCC4A0 /* SwiftyPerfTests.swift in Sources */,
 				6DA6806E1D9B5BF300CCC4A0 /* NormalPerfTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
