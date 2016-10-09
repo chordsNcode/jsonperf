@@ -15,9 +15,6 @@ extension Repo: Decodable {
         guard let id: Int = "id" <~~ json,
         let name: String = "name" <~~ json,
         let fullName: String = "full_name" <~~ json,
-
-        let owner: Owner = "owner" <~~ json,
-
         let isPrivate: Bool = "private" <~~ json,
         let htmlUrl: String = "html_url" <~~ json,
         let description: String = "description" <~~ json,
@@ -83,9 +80,6 @@ extension Repo: Decodable {
         self.id = id
         self.name = name
         self.fullName = fullName
-
-        self.owner = owner
-
         self.isPrivate = isPrivate
         self.htmlUrl = htmlUrl
         self.description = description
@@ -146,10 +140,16 @@ extension Repo: Decodable {
         self.defaultBranch = defaultBranch
         self.score = score
 
+        guard let owner: Owner = "owner" <~~ json else {
+            return nil
+        }
+        self.owner = owner
+
         self.homepage = "homepage" <~~ json
         self.mirrorUrl = "mirror_url" <~~ json
     }
 }
+
 
 extension Owner: Decodable {
     init?(json: JSON) {

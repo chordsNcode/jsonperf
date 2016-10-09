@@ -18,16 +18,8 @@ extension Repo {
 
         guard let id = json["id"] as? Int,
             let name = json["name"] as? String,
-            let fullName = json["full_name"] as? String else {
-                throw SerializationError.missing
-        }
-
-        guard let ownerJson = json["owner"] as? MyJSON,
-            let owner = try? Owner(myJson: ownerJson) else {
-            throw SerializationError.missing
-        }
-
-        guard let isPrivate = json["private"] as? Bool,
+            let fullName = json["full_name"] as? String,
+            let isPrivate = json["private"] as? Bool,
             let htmlUrl = json["html_url"] as? String,
             let description = json["description"] as? String,
             let isForked = json["fork"] as? Bool,
@@ -92,9 +84,6 @@ extension Repo {
         self.id = id
         self.name = name
         self.fullName = fullName
-
-        self.owner = owner
-
         self.isPrivate = isPrivate
         self.htmlUrl = htmlUrl
         self.description = description
@@ -155,10 +144,17 @@ extension Repo {
         self.defaultBranch = defaultBranch
         self.score = score
 
+        guard let ownerJson = json["owner"] as? MyJSON,
+            let owner = try? Owner(myJson: ownerJson) else {
+                throw SerializationError.missing
+        }
+        self.owner = owner
+
         self.homepage = json["homepage"] as? String
         self.mirrorUrl = json["mirror_url"] as? String
     }
 }
+
 
 extension Owner {
     init(myJson json: MyJSON) throws {

@@ -3,7 +3,6 @@
 //  JsonPerf
 //
 //  Created by Matt Dias on 9/27/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import XCTest
@@ -14,7 +13,6 @@ import SwiftyJSON
 class SwiftyPerfTests: XCTestCase {
     
     func testSwiftyPerformance() {
-
         self.measure {
             let json = JSON(data: self.data!)
 
@@ -23,8 +21,6 @@ class SwiftyPerfTests: XCTestCase {
                     Repo(swifty: $0)
                 }
             }
-
         }
     }
-    
 }

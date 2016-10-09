@@ -3,7 +3,6 @@
 //  JsonPerf
 //
 //  Created by Matt Dias on 9/27/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import XCTest
@@ -29,5 +28,4 @@ class NormalPerfTest: XCTestCase {
             }
         }
     }
-    
 }

@@ -15,9 +15,6 @@ extension Repo: MappableObject {
         self.id = try map.extract("id")
         self.name = try map.extract("name")
         self.fullName = try map.extract("full_name")
-
-        self.owner = try Owner(map: map.extract("owner"))
-
         self.isPrivate = try map.extract("private")
         self.htmlUrl = try map.extract("html_url")
         self.description = try map.extract("description")
@@ -78,10 +75,13 @@ extension Repo: MappableObject {
         self.defaultBranch = try map.extract("default_branch")
         self.score = try map.extract("score")
 
+        self.owner = try Owner(map: map.extract("owner"))
+
         self.homepage = try map.extract("homepage")
         self.mirrorUrl = try map.extract("mirror_url")
     }
 }
+
 
 extension Owner: MappableObject {
 

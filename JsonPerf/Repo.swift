@@ -3,7 +3,6 @@
 //  JsonPerf
 //
 //  Created by Matt Dias on 9/20/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import Foundation
@@ -19,7 +18,6 @@ struct Repo {
 	var id: Int
 	var name: String
 	var fullName: String
-	var owner: Owner
 	var isPrivate: Bool
 	var htmlUrl: String
 	var description: String
@@ -79,6 +77,9 @@ struct Repo {
 	var watchers: Int
 	var defaultBranch: String
 	var score: Int
+
+    var owner: Owner
+
     var homepage: String?
     var mirrorUrl: String?
 }

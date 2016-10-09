@@ -16,10 +16,6 @@ extension Repo: JSONDecodable {
 		self.id = try value.getInt(at: "id")
         self.name = try value.getString(at: "name")
         self.fullName = try value.getString(at: "full_name")
-
-        let ownerJson = try JSON(value.getDictionary(at: "owner"))
-        self.owner = try Owner(json: ownerJson)
-
         self.isPrivate = try value.getBool(at: "private")
         self.htmlUrl = try value.getString(at: "html_url")
         self.description = try value.getString(at: "description")
@@ -80,10 +76,14 @@ extension Repo: JSONDecodable {
         self.defaultBranch = try value.getString(at: "default_branch")
         self.score = try value.getInt(at: "score")
 
+        let ownerJson = try JSON(value.getDictionary(at: "owner"))
+        self.owner = try Owner(json: ownerJson)
+
         self.mirrorUrl = try value.getString(at: "mirror_url", alongPath: .NullBecomesNil)
         self.homepage = try value.getString(at: "homepage", alongPath: .NullBecomesNil)
 	}
 }
+
 
 extension Owner: JSONDecodable {
     public init(json value: JSON) throws {

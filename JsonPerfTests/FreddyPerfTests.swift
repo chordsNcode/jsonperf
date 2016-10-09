@@ -3,7 +3,6 @@
 //  JsonPerfTests
 //
 //  Created by Matt Dias on 9/20/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import XCTest
