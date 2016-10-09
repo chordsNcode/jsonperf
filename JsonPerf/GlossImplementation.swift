@@ -8,6 +8,8 @@
 import Foundation
 import Gloss
 
+
+/// Parsing a Github repo object using Gloss parser (https://github.com/hkellaway/Gloss)
 extension Repo: Decodable {
     init?(json: JSON) {
         guard let id: Int = "id" <~~ json,
