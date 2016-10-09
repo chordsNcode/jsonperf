@@ -77,6 +77,9 @@ extension Repo: MappableObject {
         self.watchers = try map.extract("watchers")
         self.defaultBranch = try map.extract("default_branch")
         self.score = try map.extract("score")
+
+        self.homepage = try map.extract("homepage")
+        self.mirrorUrl = try map.extract("mirror_url")
     }
 }
 
@@ -99,5 +102,7 @@ extension Owner: MappableObject {
         self.receivedEventsUrls = try map.extract("received_events_url")
         self.type = try map.extract("type")
         self.siteAdmin = try map.extract("site_admin")
+
+        self.gravatarId = try map.extract("gravatar_id")
     }
 }

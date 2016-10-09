@@ -78,6 +78,9 @@ extension Repo {
         watchers = json["watchers"].intValue
         defaultBranch = json["default_branch"].stringValue
         score = json["score"].intValue
+
+        self.homepage = json["homepage"].stringValue
+        self.mirrorUrl = json["mirror_url"].stringValue
     }
 }
 
@@ -100,5 +103,7 @@ extension Owner {
         receivedEventsUrls = json["received_events_url"].stringValue
         type = json["type"].stringValue
         siteAdmin = json["site_admin"].boolValue
+
+        gravatarId = json["gravatar_id"].stringValue
     }
 }

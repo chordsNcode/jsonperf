@@ -79,4 +79,6 @@ struct Repo {
 	var watchers: Int
 	var defaultBranch: String
 	var score: Int
+    var homepage: String?
+    var mirrorUrl: String?
 }

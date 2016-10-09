@@ -12,6 +12,7 @@ struct Owner {
 	var login: String
 	var id: Int
 	var avatarUrl: String
+    var gravatarId: String?
 	var url: String
 	var htmlUrl: String
 	var followersUrl: String

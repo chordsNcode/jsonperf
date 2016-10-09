@@ -79,6 +79,9 @@ extension Repo: JSONDecodable {
         self.watchers = try value.getInt(at: "watchers")
         self.defaultBranch = try value.getString(at: "default_branch")
         self.score = try value.getInt(at: "score")
+
+        self.mirrorUrl = try value.getString(at: "mirror_url", alongPath: .NullBecomesNil)
+        self.homepage = try value.getString(at: "homepage", alongPath: .NullBecomesNil)
 	}
 }
 
@@ -100,5 +103,7 @@ extension Owner: JSONDecodable {
         self.receivedEventsUrls = try value.getString(at: "received_events_url")
         self.type = try value.getString(at: "type")
         self.siteAdmin = try value.getBool(at: "site_admin")
+
+        self.gravatarId = try value.getString(at: "gravatar_id", alongPath: .NullBecomesNil)
     }
 }

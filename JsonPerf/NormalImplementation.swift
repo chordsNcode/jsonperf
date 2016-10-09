@@ -154,6 +154,9 @@ extension Repo {
         self.watchers = watchers
         self.defaultBranch = defaultBranch
         self.score = score
+
+        self.homepage = json["homepage"] as? String
+        self.mirrorUrl = json["mirror_url"] as? String
     }
 }
 
@@ -199,5 +202,7 @@ extension Owner {
         self.receivedEventsUrls = receivedEventsUrls
         self.type = type
         self.siteAdmin = siteAdmin
+
+        self.gravatarId = json["gravatar_id"] as? String
     }
 }

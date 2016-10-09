@@ -145,6 +145,9 @@ extension Repo: Decodable {
         self.watchers = watchers
         self.defaultBranch = defaultBranch
         self.score = score
+
+        self.homepage = "homepage" <~~ json
+        self.mirrorUrl = "mirror_url" <~~ json
     }
 }
 
@@ -185,5 +188,7 @@ extension Owner: Decodable {
         self.receivedEventsUrls = receivedEventsUrls
         self.type = type
         self.siteAdmin = siteAdmin
+
+        self.gravatarId = "gravatar_id" <~~ json
     }
 }
