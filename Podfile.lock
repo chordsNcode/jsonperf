@@ -10,18 +10,21 @@ PODS:
   - Genome/Foundation (3.0.2):
     - Genome/Core
   - Genome/Packages (3.0.2)
+  - Gloss (1.0.0)
   - SwiftyJSON (3.0.0)
 
 DEPENDENCIES:
   - Freddy
   - Genome
+  - Gloss
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Freddy: 367f994c88a90dd3987293b4b1bec94a4530745a
   Genome: 44584c1e971899a5a4b20ee87faee452a5f1ac1a
+  Gloss: '014789e9e69ca18f127eacca999f4c9b0bff6d58'
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
 
-PODFILE CHECKSUM: '0144379cca053a35e0f0c5e4e9a3bb90deff14a4'
+PODFILE CHECKSUM: e53b293f4674f25b6020184c17c8f3b668fe53b4
 
 COCOAPODS: 1.0.1

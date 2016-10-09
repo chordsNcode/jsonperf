@@ -22,7 +22,7 @@ class NormalPerfTest: XCTestCase {
                 }
 
                 _ = try items.map{
-                    try Repo(json: $0)
+                    try Repo(myJson: $0)
                 }
             } catch {
                 XCTFail("bad json")

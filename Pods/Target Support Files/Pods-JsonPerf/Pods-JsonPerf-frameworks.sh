@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Freddy/Freddy.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Genome/Genome.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Gloss/Gloss.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Freddy/Freddy.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Genome/Genome.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Gloss/Gloss.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
 fi

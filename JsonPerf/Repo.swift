@@ -79,5 +79,4 @@ struct Repo {
 	var watchers: Int
 	var defaultBranch: String
 	var score: Int
-
 }

@@ -10,7 +10,7 @@ import Foundation
 
 /// Parsing a Github repo object using Native techniques (https://developer.apple.com/swift/blog/?id=37)
 extension Repo {
-    init(json: MyJSON) throws {
+    init(myJson json: MyJSON) throws {
 
         guard !json.isEmpty else {
             throw SerializationError.invalid
@@ -23,7 +23,7 @@ extension Repo {
         }
 
         guard let ownerJson = json["owner"] as? MyJSON,
-            let owner = try? Owner(json: ownerJson) else {
+            let owner = try? Owner(myJson: ownerJson) else {
             throw SerializationError.missing
         }
 
@@ -158,7 +158,7 @@ extension Repo {
 }
 
 extension Owner {
-    init(json: MyJSON) throws {
+    init(myJson json: MyJSON) throws {
 
         guard !json.isEmpty else {
             throw SerializationError.invalid
