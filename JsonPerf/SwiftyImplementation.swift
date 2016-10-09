@@ -3,12 +3,13 @@
 //  JsonPerf
 //
 //  Created by Matt Dias on 9/27/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
+
+/// Parsing a Github repo object using SwiftyJSON (https://github.com/SwiftyJSON/SwiftyJSON)
 extension Repo {
 
     public init(swifty json: JSON) {

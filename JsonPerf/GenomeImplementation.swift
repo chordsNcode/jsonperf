@@ -3,13 +3,13 @@
 //  JsonPerf
 //
 //  Created by Matt Dias on 10/8/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import Foundation
 import Genome
 
 
+/// Parsing a Github repo object using Genome parser (https://github.com/LoganWright/Genome)
 extension Repo: MappableObject {
     init(map: Map) throws {
         self.id = try map.extract("id")

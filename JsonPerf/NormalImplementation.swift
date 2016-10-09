@@ -3,11 +3,12 @@
 //  JsonPerf
 //
 //  Created by Matt Dias on 9/25/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import Foundation
 
+
+/// Parsing a Github repo object using Native techniques (https://developer.apple.com/swift/blog/?id=37)
 extension Repo {
     init(json: MyJSON) throws {
 
