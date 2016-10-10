@@ -27,7 +27,7 @@ see [NormalPerfTest.swift](https://github.com/chordsNcode/jsonperf/blob/master/J
 
 The idea is to parse data into a JSON object and then pass that object to the initializer. Each JSON parsing package/technique has its own test class (because of some naming overlaps between imports). The data used to generate the JSON is a computed variable in an extension on XCTestCase. Doing this allows the tests to isolate the steps of creating an object *after* a network call has been made.
 
-Using the ** *measure* ** block allows me to run the test ten times and create a baseline with a standard deviation. These numbers then allow us, as developers, to compare the packages and choose which makes the most sense for our projects.
+Using the *measure* block allows me to run the test ten times and create a baseline with a standard deviation. These numbers then allow us, as developers, to compare the packages and choose which makes the most sense for our projects.
 
 
 ----
