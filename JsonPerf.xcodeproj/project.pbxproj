@@ -242,7 +242,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = Zipcar;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					6DD561DC1D91E09A00973D80 = {
 						CreatedOnToolsVersion = 8.0;
