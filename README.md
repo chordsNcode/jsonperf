@@ -1,6 +1,6 @@
 # jsonperf
 
-This is a project inspired by a [blog post by Apple](https://developer.apple.com/swift/blog/?id=37) about JSON parsing. The idea is to compare popular JSON parsers and native parsing against each other using Xcode's performance test (as part of the XCTest suite).
+This is a project inspired by a [blog post by Apple](https://developer.apple.com/swift/blog/?id=37) about JSON parsing. The idea is to compare popular JSON mappers and native parsing against each other using Xcode's performance test (as part of the XCTest suite). The exception to this is Big Nerd Ranch's Freddy (in which they wrote their own parser).
 
 
 ----
@@ -25,7 +25,7 @@ see [NormalPerfTest.swift](https://github.com/chordsNcode/jsonperf/blob/master/J
         }
     }
 
-The idea is to parse data into a JSON object and then pass that object to the initializer. Each JSON parsing package/technique has its own test class (because of some naming overlaps between imports). The data used to generate the JSON is a computed variable in an extension on XCTestCase. Doing this allows the tests to isolate the steps of creating an object *after* a network call has been made.
+The idea is to parse data into a JSON object and then pass that object to the initializer of each mapper. Each JSON mapping package/technique has its own test class (because of some naming overlaps between imports). The data used to generate the JSON is a computed variable in an extension on XCTestCase. Doing this allows the tests to isolate the steps of creating an object *after* a network call has been made.
 
 Using the *measure* block allows me to run the test ten times and create a baseline with a standard deviation. These numbers then allow us, as developers, to compare the packages and choose which makes the most sense for our projects.
 
@@ -46,6 +46,7 @@ I encourage you to pull this project and check out the results (I was a bit surp
 * [Freddy](https://github.com/bignerdranch/Freddy)
 * [Gloss](https://github.com/hkellaway/Gloss)
 * [Genome](https://github.com/LoganWright/Genome)
+* [JSONCodable](https://github.com/matthewcheok/JSONCodable)
 * [JSONSerialization](https://developer.apple.com/reference/foundation/jsonserialization)
 
 If I've missed a package you'd like to be tested either create an issue, pull request, or send me a tweet [@mdiasdev](https://twitter.com/mdiasdev).
