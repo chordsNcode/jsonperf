@@ -20,9 +20,9 @@ class NormalPerfTest: XCTestCase {
                         return
                 }
 
-                _ = try items.map{
-                    try Repo(myJson: $0)
-                }
+                let result = items.flatMap { try? Repo(myJson: $0) }
+                XCTAssertTrue(result.count == 30)
+                
             } catch {
                 XCTFail("bad json")
             }

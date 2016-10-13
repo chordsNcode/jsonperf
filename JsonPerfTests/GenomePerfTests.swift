@@ -17,12 +17,12 @@ class GenomePerfTests: XCTestCase {
         self.measure {
             do {
                 let jsonData = try self.data?.makeNode()
-                let nodes = jsonData?["items"]?.nodeArray
-
-                try nodes?.forEach({ (node) in
-                    let _ = try Repo(node: node)
-                })
-
+                if let nodes = jsonData?["items"]?.nodeArray {
+                    let result = nodes.flatMap { try? Repo(node: $0) }
+                    XCTAssertTrue(result.count == 30)
+                } else {
+                    XCTFail()
+                }
             } catch {
                 XCTFail("couldn't make the object")
             }

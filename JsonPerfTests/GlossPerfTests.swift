@@ -21,9 +21,9 @@ class GlossPerfTests: XCTestCase {
                     return
                 }
 
-                _ = items.map{
-                    Repo(json: $0)
-                }
+                let result = items.map { Repo(json: $0) }
+                XCTAssertTrue(result.count == 30)
+
 
             } catch {
                 XCTFail("bad json")

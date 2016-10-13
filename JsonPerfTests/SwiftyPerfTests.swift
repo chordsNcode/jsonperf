@@ -17,9 +17,10 @@ class SwiftyPerfTests: XCTestCase {
             let json = JSON(data: self.data!)
 
             if let items = json["items"].array {
-                _ = items.map{ 
-                    Repo(swifty: $0)
-                }
+
+
+                let result = items.map{ Repo(swifty: $0) }
+                XCTAssertTrue(result.count == 30)
             }
         }
     }
