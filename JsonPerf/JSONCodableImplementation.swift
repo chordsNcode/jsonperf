@@ -3,7 +3,6 @@
 //  JsonPerf
 //
 //  Created by Matt Dias on 10/12/16.
-//  Copyright © 2016 Zipcar. All rights reserved.
 //
 
 import Foundation
