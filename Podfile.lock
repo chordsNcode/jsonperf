@@ -11,20 +11,33 @@ PODS:
     - Genome/Core
   - Genome/Packages (3.0.2)
   - Gloss (1.0.0)
+  - JSONCodable (3.0)
   - SwiftyJSON (3.0.0)
 
 DEPENDENCIES:
   - Freddy
   - Genome
   - Gloss
+  - JSONCodable (from `https://github.com/matthewcheok/JSONCodable.git`, tag `3.0`)
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  JSONCodable:
+    :git: https://github.com/matthewcheok/JSONCodable.git
+    :tag: '3.0'
+
+CHECKOUT OPTIONS:
+  JSONCodable:
+    :git: https://github.com/matthewcheok/JSONCodable.git
+    :tag: '3.0'
 
 SPEC CHECKSUMS:
   Freddy: 367f994c88a90dd3987293b4b1bec94a4530745a
   Genome: 44584c1e971899a5a4b20ee87faee452a5f1ac1a
   Gloss: '014789e9e69ca18f127eacca999f4c9b0bff6d58'
+  JSONCodable: 8a07aec0cae6d8a902305a34c329fdc6ffbaf521
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
 
-PODFILE CHECKSUM: e53b293f4674f25b6020184c17c8f3b668fe53b4
+PODFILE CHECKSUM: d84548309d1ceb9e6d14c705c60136e864ff9e87
 
 COCOAPODS: 1.0.1

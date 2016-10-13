@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6D1220371D93561D00779B69 /* FreddyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1220361D93561D00779B69 /* FreddyImplementation.swift */; };
 		6D1220381D93583900779B69 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DD562001D91E0D100973D80 /* response.json */; };
+		6D691AE71DAF179C005999F4 /* JSONCodableImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D691AE61DAF179C005999F4 /* JSONCodableImplementation.swift */; };
+		6D691AE91DAF19BD005999F4 /* JSONCodablePerfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D691AE81DAF19BD005999F4 /* JSONCodablePerfTests.swift */; };
 		6D8BB60E1D989F2A00100187 /* NormalImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BB60D1D989F2A00100187 /* NormalImplementation.swift */; };
 		6DA6806C1D9B52C400CCC4A0 /* SwiftyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */; };
 		6DA6806E1D9B5BF300CCC4A0 /* NormalPerfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6806D1D9B5BF300CCC4A0 /* NormalPerfTest.swift */; };
@@ -45,6 +47,8 @@
 		29B8B7E216196E7C7E0644D6 /* Pods_JsonPerfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonPerfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCF8B0B1A92F28FFB8CD498 /* Pods-JsonPerfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonPerfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JsonPerfTests/Pods-JsonPerfTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D1220361D93561D00779B69 /* FreddyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreddyImplementation.swift; sourceTree = "<group>"; };
+		6D691AE61DAF179C005999F4 /* JSONCodableImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCodableImplementation.swift; sourceTree = "<group>"; };
+		6D691AE81DAF19BD005999F4 /* JSONCodablePerfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCodablePerfTests.swift; sourceTree = "<group>"; };
 		6D8BB60D1D989F2A00100187 /* NormalImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalImplementation.swift; sourceTree = "<group>"; };
 		6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyImplementation.swift; sourceTree = "<group>"; };
 		6DA6806D1D9B5BF300CCC4A0 /* NormalPerfTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalPerfTest.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				6D1220361D93561D00779B69 /* FreddyImplementation.swift */,
 				6DA680731DA9EACC00CCC4A0 /* GenomeImplementation.swift */,
 				6DA680771DAAB42100CCC4A0 /* GlossImplementation.swift */,
+				6D691AE61DAF179C005999F4 /* JSONCodableImplementation.swift */,
 				6D8BB60D1D989F2A00100187 /* NormalImplementation.swift */,
 				6DA6806B1D9B52C400CCC4A0 /* SwiftyImplementation.swift */,
 			);
@@ -156,6 +161,7 @@
 				6DD561F51D91E09A00973D80 /* FreddyPerfTests.swift */,
 				6DA680751DA9EEC000CCC4A0 /* GenomePerfTests.swift */,
 				6DA680791DAABD1400CCC4A0 /* GlossPerfTests.swift */,
+				6D691AE81DAF19BD005999F4 /* JSONCodablePerfTests.swift */,
 				6DA6806D1D9B5BF300CCC4A0 /* NormalPerfTest.swift */,
 				6DA680711D9B645B00CCC4A0 /* SwiftyPerfTests.swift */,
 				6DD561F71D91E09A00973D80 /* Info.plist */,
@@ -390,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D691AE71DAF179C005999F4 /* JSONCodableImplementation.swift in Sources */,
 				6D1220371D93561D00779B69 /* FreddyImplementation.swift in Sources */,
 				6DA6806C1D9B52C400CCC4A0 /* SwiftyImplementation.swift in Sources */,
 				6DA680781DAAB42100CCC4A0 /* GlossImplementation.swift in Sources */,
@@ -409,6 +416,7 @@
 				6DD561F61D91E09A00973D80 /* FreddyPerfTests.swift in Sources */,
 				6DA680701D9B5C3600CCC4A0 /* XCTestExtension.swift in Sources */,
 				6DA680761DA9EEC000CCC4A0 /* GenomePerfTests.swift in Sources */,
+				6D691AE91DAF19BD005999F4 /* JSONCodablePerfTests.swift in Sources */,
 				6DA6807A1DAABD1400CCC4A0 /* GlossPerfTests.swift in Sources */,
 				6DA680721D9B645B00CCC4A0 /* SwiftyPerfTests.swift in Sources */,
 				6DA6806E1D9B5BF300CCC4A0 /* NormalPerfTest.swift in Sources */,

@@ -7,10 +7,10 @@ target 'JsonPerf' do
   pod 'Freddy'
   pod 'Genome'
   pod 'Gloss'
+  pod 'JSONCodable', :git=> 'https://github.com/matthewcheok/JSONCodable.git', :tag=> '3.0'
 
   target 'JsonPerfTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
 end
