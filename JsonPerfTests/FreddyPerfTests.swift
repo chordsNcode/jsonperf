@@ -17,8 +17,8 @@ class JsonPerfTests: XCTestCase {
 			do {
 
 				let json = try JSON(data: self.data!)
-				_ = try json.getArray(at: "items").map(Repo.init)
-
+				let result = try json.getArray(at: "items").map(Repo.init)
+                XCTAssertTrue(result.count == 30)
 			} catch {
 				XCTFail("oops!")
 			}

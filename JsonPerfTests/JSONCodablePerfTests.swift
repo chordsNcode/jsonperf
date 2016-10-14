@@ -21,9 +21,9 @@ class JSONCodablePerfTests: XCTestCase {
                         return
                 }
 
-                _ = try items.map{
-                    try Repo(object: $0)
-                }
+                let result = items.flatMap { try? Repo(object: $0) }
+                XCTAssertTrue(result.count == 30)
+                
             } catch {
                 XCTFail("bad json")
             }
